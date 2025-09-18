@@ -5,225 +5,279 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sakti.id</title>
 
+  <!-- Tailwind -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <link rel="stylesheet" href="./style.css">
-  <script src="./script.js" defer></script>
+
+  <!-- CSS eksternal -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- JS eksternal -->
+  <script src="script.js" defer></script>
 </head>
-<body>
+<body class="font-sans">
+
   <!-- HEADER -->
-  <header class="main-header p-[8px]">
-    <div class="logo-icon"></div>
+  <header class="fixed top-0 left-0 w-full flex justify-between items-center px-8 py-4 bg-[#FFFEDE] shadow-sm z-50">
+    <div>
+      <img src="./images/Sakti.png" alt="Sakti.id Logo" class="w-[140px] h-auto object-contain">
+    </div>
     <nav>
-      <img src="./images/Sakti.png" alt="Sakti.id Logo" class="w-[120px] h-[40px] object-contain">
-      <ul class="flex">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#OurServices">Our Services</a></li>
-        <li><a href="#superiority">Superiority</a></li>
-        <li><a href="#contactUs">Contact Us</a></li>
+      <ul class="flex space-x-8 text-gray-800 font-medium">
+        <li><a href="#home" class="hover:text-blue-600">Home</a></li>
+        <li><a href="#about" class="hover:text-blue-600">About Us</a></li>
+        <li><a href="#OurServices" class="hover:text-blue-600">Our Services</a></li>
+        <li><a href="#superiority" class="hover:text-blue-600">Superiority</a></li>
+        <li>
+          <a href="#contact" class="bg-blue-900 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
+            Contact Us
+          </a>
+        </li>
       </ul>
     </nav>
   </header>
 
+  <!-- MAIN -->
   <main>
-    <!-- HOME PAGE -->
-    <section id="home">
-      <br>
-      <img src="./images/penjual-jasa.png" alt="Penjual Jasa">
-      <img src="./images/penjual-roti.png" alt="Penjual Roti">
-      <img src="./images/penjual-baju.png" alt="Penjual Baju">
-      <br>
-      <h1><strong>Empowering SMEs through Digital Transformation</strong></h1>
-      <br>
-      <h3>
-        Menjadi mitra strategis utama bagi UMKM Indonesia dalam percepatan transformasi digital untuk meningkatkan daya saing di era ekonomi digital.
-      </h3>
-      <br>
-      <button>Free consultation</button>
-      <br>
-    </section>
-
-    <!-- ABOUT US -->
-    <section id="about">
-      <br><br>
-      <h2><strong>PT Solusi Akselerasi Teknologi Indonesia</strong></h2>
-      <br>
-      <p>
-        <strong>Sakti.id</strong> berkomitmen menghadirkan solusi digital yang efektif, terukur, dan berkelanjutan bagi UMKM. Kami tidak hanya memberikan layanan, tetapi juga mengedukasi pelaku usaha agar mampu memanfaatkan teknologi secara optimal.
-        Dengan terus mengembangkan produk digital yang inovatif dan relevan, Sakti.id membangun ekosistem digital yang mendukung pertumbuhan bisnis lokal dalam jangka panjang.
-      </p>
-      <br>
-
-      <h3><strong>Visi</strong></h3>
-      <p>
-        <strong>Menjadi mitra strategis</strong> utama bagi UMKM Indonesia dalam percepatan transformasi digital untuk meningkatkan daya saing di era ekonomi digital.
-      </p>
-      <img src="./images/about-us.png" alt="About Us Image">
-      <br>
-
-      <h3><strong>Misi</strong></h3>
-      <ul>
-        <li><strong>Memberikan solusi</strong> digital yang efektif, terukur, dan berkelanjutan.</li>
-        <li><strong>Mengedukasi</strong> pelaku UMKM untuk memanfaatkan teknologi secara optimal.</li>
-        <li><strong>Mengembangkan</strong> produk dan layanan digital yang inovatif dan relevan dengan kebutuhan bisnis lokal.</li>
-        <li><strong>Membangun</strong> ekosistem digital yang mendukung pertumbuhan bisnis jangka panjang</li>
-      </ul>
-      <img src="./images/element-sakti-kirii.png" alt="Element Sakti Kiri">
-      <img src="./images/Sakti.png" alt="Sakti Logo">
-      <img src="./images/element-sakti-kanan.png" alt="Element Sakti Kanan">
-    </section>
-
-    <!-- OUR SERVICES -->
-    <section id="OurServices">
-      <br><br>
-      <h2><strong>Our Services</strong></h2>
-      <br>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure quisquam laboriosam inventore laborum nihil, eligendi amet, expedita facilis dolores corporis vero a ipsam ab? Ea fuga laudantium numquam nulla ipsum.
-      </p>
-      <br>
-      <div class="services-container">
-        <div class="service-card">
-          <img src="./images/layanan-1.png" alt="Layanan 1">
-          <h3><strong>Website & E-Commerce Development</strong></h3>
-          <p>Pembuatan website profesional & toko online, integrasi sistem pembayaran dan logistik.</p>
-        </div>
-        <div class="service-card">
-          <img src="./images/layanan-2.png" alt="Layanan 2">
-          <h3><strong>Business Process Automation</strong></h3>
-          <p>Implementasi tools untuk meningkatkan efisiensi operasional, integrasi sistem cloud dan aplikasi internal.</p>
-        </div>
-        <div class="service-card">
-          <img src="./images/layanan-3.png" alt="Layanan 3">
-          <h3><strong>Digital Strategy & Consulting</strong></h3>
-          <p>Perencanaan roadmap digital, analisis kebutuhan teknologi dan proses bisnis.</p>
-        </div>
-        <div class="service-card">
-          <img src="./images/layanan-4.png" alt="Layanan 4">
-          <h3><strong>Digital Marketing & Growth</strong></h3>
-          <p>Social media strategy, content creation, ads management, optimasi SEO & SEM.</p>
-        </div>
-        <div class="service-card">
-          <img src="./images/layanan-5.png" alt="Layanan 5">
-          <h3><strong>Training & Workshop Digital</strong></h3>
-          <p>Pelatihan tim UMKM dalam adopsi teknologi, edukasi strategi pemasaran digital.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- SUPERIORITY -->
-    <section id="superiority">
-      <br><br>
-      <h2><strong>We Are Here for You</strong></h2>
-      <br>
-      <div class="superiority-container">
-        <div class="superiority-card">
-          <img src="./images/superiority-1.png" alt="Fokus UMKM">
-          <h3><strong>Fokus UMKM</strong></h3>
-          <p>Spesialis dalam mendigitalisasi bisnis skala kecil dan menengah.</p>
-        </div>
-        <div class="superiority-card">
-          <img src="./images/superiority-2.png" alt="Solusi Terukur">
-          <h3><strong>Solusi Terukur</strong></h3>
-          <p>Setiap implementasi berbasis data dan hasil yang dapat diukur.</p>
-        </div>
-        <div class="superiority-card">
-          <img src="./images/superiority-3.png" alt="Pendekatan Kolaboratif">
-          <h3><strong>Pendekatan Kolaboratif</strong></h3>
-          <p>Bekerja bersama pemilik bisnis untuk solusi yang relevan.</p>
-        </div>
-        <div class="superiority-card">
-          <img src="./images/superiority-4.png" alt="Tim Berpengalaman">
-          <h3><strong>Tim Berpengalaman</strong></h3>
-          <p>Gabungan praktisi teknologi, marketing, dan bisnis.</p>
-          <br>
-        </div>
-      </div>
-
-      <div class="superiority-target">
-        <img src="./images/ilustrasi-kerjasama.png" alt="Ilustrasi Kerjasama">
-        <h3><strong>Dengan bantuan ini kami harap dapat membantu:</strong></h3>
-        <ul>
-          <li><strong>UMKM</strong> di berbagai sektor (retail, FnB, jasa, manufaktur skala kecil, dll)</li>
-          <li><strong>Start Up Tahap Awal</strong> yang membutuhkan fondasi digital.</li>
-          <li><strong>Perusahaan Tradisional</strong> yang ingin migrasi ke sistem digital.</li>
-        </ul>
-      </div>
-
-      <br>
-      <div class="superiority-data">
-        <div class="total-UMKM-registered">
-          <h3><strong>Total UMKM Registered</strong></h3>
-          <p><strong>30k+</strong></p>
-        </div>
-        <div class="total-UMKM-Broad">
-          <h3><strong>Total UMKM On Broad</strong></h3>
-          <p><strong>65K+</strong></p>
-        </div>
-        <div class="total-UMKM-Terdigitalisasi">
-          <h3><strong>Total UMKM Terdigitalisasi</strong></h3>
-          <p><strong>22,8K+</strong></p>
-        </div>
-        <div class="Target-Pemerintah-Digitalisasi-UMKM">
-          <h3><strong>Target Pemerintah Digitalisasi UMKM</strong></h3>
-          <p><strong>30K+</strong></p>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT US -->
-    <section id="contactUs">
-      <br><br>
-      <h2><strong>Contact Us</strong></h2>
-      <br>
-      <p>Hubungi kami untuk konsultasi gratis mengenai transformasi digital bisnis Anda.</p>
-      <br>
-      <div class="contact-info">
-        <div class="contact-item">
-          <img src="./images/phone-icon.png" alt="Phone Icon">
-          <p><strong>Contact Us:</strong></p>
-          <p>+62 817-880-488</p>
-        </div>
-        <div class="contact-item">
-          <img src="./images/instagram-icon.png" alt="Instagram Icon">
-          <p><strong>Social Media:</strong></p>
-          <p>@sakti.id</p>
-        </div>
-        <div class="contact-item">
-          <img src="./images/email-icon.png" alt="Email Icon">
-          <p><strong>Email:</strong></p>
-          <p>jerometimang@sakti.id</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- FORM CONTACT -->
-    <section id="contact" class="min-h-screen p-8 bg-white text-black">
-      <div class="flex flex-col md:flex-row gap-12">
-        <!-- Left: Form -->
-        <form class="flex flex-col gap-4 max-w-md flex-1">
-          <input id="name" type="text" placeholder="Your Name" class="border p-2 rounded bg-gray-900 text-white" required>
-          <input id="email" type="email" placeholder="Your Email" class="border p-2 rounded bg-gray-900 text-white" required>
-          <textarea id="message" placeholder="Your Message" class="border p-2 rounded bg-gray-900 text-white" required></textarea>
-          <button type="button" class="bg-blue-500 text-white p-2 rounded hover:bg-blue-600 transition" onclick="validateForm();">
-            Send
-          </button>
-        </form>
+    <!-- HOME -->
+    <section id="home" 
+      class="relative bg-cover bg-center min-h-screen flex items-center px-12"
+      style="background-image: url('./images/penjual-baju.png');">
+      <div class="absolute inset-0 bg-black/40"></div>
+      <div class="relative z-10 max-w-xl text-white pt-[120px]">
+        <h1 class="text-4xl font-extrabold leading-tight">
+          Empowering SMEs through <br> Digital Transformation
+        </h1>
+        <p class="mt-6 text-lg">
+          Menjadi mitra strategis utama bagi UMKM Indonesia dalam percepatan transformasi digital
+          untuk meningkatkan daya saing di era ekonomi digital.
+        </p>
+        <a href="#contact" class="mt-8 inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700">
+          Free Consultation
+        </a>
       </div>
     </section>
   </main>
 
-  <!-- FOOTER -->
-  <footer>
-    <img src="./images/Sakti.png" alt="Sakti Logo" class="w-[120px] h-[40px] object-contain">
-    <div class="informasi-perusahaan">
-      <h3><strong>Informasi Perusahaan</strong></h3>
-      <p>PT Solusi Akselerasi Teknologi Indonesia</p>
-      <p>Sakti.id</p>
-      <p>Jakarta, Indonesia</p>
+  <!-- ABOUT US -->
+  <section id="about" class="relative px-12 py-20 bg-white">
+    <div class="w-screen bg-[#FFFEDE] py-6 px-8 mb-10 text-center">
+      <h2 class="text-2xl font-bold text-blue-900">
+        PT Solusi Akselerasi Teknologi Indonesia
+      </h2>
+      <p class="text-gray-700 text-sm">Digital Consulting & Business Technology Acceleration</p>
     </div>
-    <br><br>
-    <p>&copy; Copyright 2025 PT Solusi Akselerasi Teknologi Indonesia (sakti.id). All rights reserved.</p>
+
+    <div class="grid md:grid-cols-2 gap-12 items-start">
+      <!-- Left -->
+      <div>
+        <p class="text-gray-700 leading-relaxed mb-6">
+          <strong>Sakti.id</strong> berkomitmen menghadirkan solusi digital yang efektif, terukur, 
+          dan berkelanjutan bagi UMKM. Kami tidak hanya memberikan layanan, tetapi juga mengedukasi 
+          pelaku usaha agar mampu memanfaatkan teknologi secara optimal.
+        </p>
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Visi</h3>
+        <p class="text-gray-700 leading-relaxed">
+          <strong>Menjadi mitra strategis</strong> utama bagi UMKM Indonesia dalam percepatan 
+          transformasi digital untuk meningkatkan daya saing di era ekonomi digital.
+        </p>
+      </div>
+      <!-- Right -->
+      <div>
+        <h3 class="text-xl font-bold text-gray-900 mb-4">Misi</h3>
+        <ul class="space-y-4">
+          <li class="flex items-start">
+            <span class="dot"></span>
+            <p><strong>Memberikan solusi</strong> digital yang efektif, terukur, dan berkelanjutan.</p>
+          </li>
+          <li class="flex items-start">
+            <span class="dot"></span>
+            <p><strong>Mengedukasi</strong> pelaku UMKM untuk memanfaatkan teknologi secara optimal.</p>
+          </li>
+          <li class="flex items-start">
+            <span class="dot"></span>
+            <p><strong>Mengembangkan</strong> produk dan layanan digital yang inovatif.</p>
+          </li>
+          <li class="flex items-start">
+            <span class="dot"></span>
+            <p><strong>Membangun</strong> ekosistem digital yang mendukung pertumbuhan bisnis jangka panjang.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-16 flex justify-between items-center">
+      <img src="./images/element-sakti-kirii.png" alt="Element Kiri" class="w-24 h-auto">
+      <img src="./images/Sakti.png" alt="Sakti Logo" class="h-16 object-contain">
+      <img src="./images/element-sakti-kanan.png" alt="Element Kanan" class="w-24 h-auto">
+    </div>
+  </section>
+
+  <!-- OUR SERVICES -->
+  <section id="OurServices" class="relative">
+    <div class="relative">
+      <img src="./images/penjual-kopi.png" alt="Our Services" class="w-full h-[350px] object-cover brightness-75">
+      <div class="absolute inset-0 flex flex-col justify-center items-center text-white px-6">
+        <h2 class="text-3xl font-bold mb-4">Our Services</h2>
+        <p class="max-w-2xl text-center text-sm md:text-base">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
+    </div>
+    <div class="absolute left-1/2 transform -translate-x-1/2 -bottom-24 w-full max-w-6xl px-6 z-20">
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+        <div class="service-card">
+          <img src="./images/component-web.png" alt="Layanan 1" class="service-icon">
+          <h3>Website & E-Commerce</h3>
+          <p>Pembuatan website profesional & toko online, integrasi pembayaran.</p>
+        </div>
+        <div class="service-card">
+          <img src="./images/component-business.png" alt="Layanan 2" class="service-icon">
+          <h3>Business Process Automation</h3>
+          <p>Implementasi tools untuk efisiensi operasional & sistem cloud.</p>
+        </div>
+        <div class="service-card">
+          <img src="./images/component-strategy.png" alt="Layanan 3" class="service-icon">
+          <h3>Digital Strategy & Consulting</h3>
+          <p>Perencanaan roadmap digital dan analisis kebutuhan bisnis.</p>
+        </div>
+        <div class="service-card">
+          <img src="./images/component-strategy.png" alt="Layanan 4" class="service-icon">
+          <h3>Digital Marketing & Growth</h3>
+          <p>Strategi sosial media, ads, SEO & SEM.</p>
+        </div>
+        <div class="service-card">
+          <img src="./images/component-training.png" alt="Layanan 5" class="service-icon">
+          <h3>Training & Workshop</h3>
+          <p>Pelatihan tim UMKM untuk adopsi teknologi & strategi digital.</p>
+        </div>
+      </div>
+    </div>
+    <div class="h-48"></div>
+  </section>
+
+  <!-- SUPERIORITY -->
+  <section id="superiority" class="superiority-section">
+    <h2>We Are Here for You</h2>
+    <div class="superiority-card">
+      <div class="superiority-grid">
+        <div class="superiority-item">
+          <img src="./images/component-fokus.png" alt="Fokus">
+          <div>
+            <h3>Fokus UMKM</h3>
+            <p>Spesialis dalam mendigitalisasi bisnis skala kecil dan menengah.</p>
+          </div>
+        </div>
+        <div class="superiority-item">
+          <img src="./images/component-kerjasama.png" alt="Kolaboratif">
+          <div>
+            <h3>Pendekatan Kolaboratif</h3>
+            <p>Bekerja bersama pemilik bisnis untuk solusi relevan.</p>
+          </div>
+        </div>
+        <div class="superiority-item">
+          <img src="./images/component-solusi.png" alt="Solusi">
+          <div>
+            <h3>Solusi Terukur</h3>
+            <p>Berbasis data dan hasil yang terukur.</p>
+          </div>
+        </div>
+        <div class="superiority-item">
+          <img src="./images/component-team.png" alt="Tim">
+          <div>
+            <h3>Tim Berpengalaman</h3>
+            <p>Gabungan praktisi teknologi, marketing, dan bisnis.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="superiority-target">
+      <img src="./images/umkm.png" alt="UMKM">
+      <div>
+        <h3><strong>Dengan bantuan ini kami harap dapat membantu:</strong></h3>
+        <ul>
+          <li><strong>UMKM</strong> di berbagai sektor</li>
+          <li><strong>Start Up</strong> tahap awal</li>
+          <li><strong>Perusahaan Tradisional</strong> yang ingin migrasi digital</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="superiority-data">
+      <div><h3>Total UMKM (registered)</h3><p>30K+</p></div>
+      <div><h3>Total UMKM (broad)</h3><p>65K+</p></div>
+      <div><h3>UMKM terdigitalisasi (Kominfo)</h3><p>22,8K+</p></div>
+      <div><h3>Target pemerintah digitalisasi</h3><p>30K+</p></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="relative">
+    <img src="./images/kopinya-penjual-kopi.png" alt="backdrop" class="w-full h-64 object-cover">
+    <h1 class="absolute inset-0 flex items-center justify-center text-white text-4xl font-bold">Contact Us</h1>
+  </section>
+
+  <section id="contact" class="bg-white px-8 py-16">
+    <div class="flex flex-col md:flex-row gap-12 max-w-6xl mx-auto">
+      <div class="flex-1">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">
+          Hubungi kami untuk konsultasi gratis
+        </h2>
+        <div class="space-y-6 text-gray-700">
+          <div>
+            <h3 class="font-semibold">Contact</h3>
+            <p>+62 1234567890</p>
+            <p>+62 123457890</p>
+          </div>
+          <div>
+            <h3 class="font-semibold">Social Media</h3>
+            <p>@prabowo</p>
+          </div>
+          <div>
+            <h3 class="font-semibold">Email</h3>
+            <p>hello@sakti.id</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex-1 bg-gray-100 p-6 rounded-lg shadow">
+        <form class="flex flex-col gap-4">
+          <input type="text" placeholder="Nama" class="p-3 border rounded-md w-full">
+          <input type="email" placeholder="Telepon/Email" class="p-3 border rounded-md w-full">
+          <input type="text" placeholder="Nama Perusahaan" class="p-3 border rounded-md w-full">
+          <textarea rows="4" placeholder="Pesan / Kebutuhan" class="p-3 border rounded-md w-full"></textarea>
+          <button type="submit" class="bg-blue-600 text-white font-semibold py-2 rounded-lg hover:bg-blue-700 transition">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-yellow-50 py-8 mt-12">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between gap-8 px-8">
+      <div class="flex flex-col gap-2">
+        <img src="./images/Sakti.png" alt="Sakti-Logo" class="w-[120px] h-[40px] object-contain">
+        <p class="text-sm text-gray-700">Solusi Akselerasi Teknologi Indonesia</p>
+      </div>
+      <div>
+        <h3 class="font-bold mb-2">Informasi Perusahaan</h3>
+        <p>PT Solusi Akselerasi Teknologi Indonesia</p>
+        <p>sakti.id</p>
+        <p>Jakarta, Indonesia</p>
+        <p>www.sakti.id</p>
+        <p>hello@sakti.id</p>
+      </div>
+      <div>
+        <h3 class="font-bold mb-2">Kontak</h3>
+        <p>Untuk informasi lebih lanjut dan kerja sama:</p>
+        <p>hello@sakti.id</p>
+        <p>www.sakti.id</p>
+      </div>
+    </div>
+    <div class="text-center text-sm text-gray-600 mt-6">
+      &copy; 2025 PT Solusi Akselerasi Teknologi Indonesia (sakti.id). All rights reserved.
+    </div>
   </footer>
 </body>
 </html>

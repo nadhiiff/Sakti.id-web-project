@@ -1,0 +1,137 @@
+/* Dot for list */
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: #1e3a8a;
+  border-radius: 50%;
+  margin-top: 8px;
+  margin-right: 12px;
+}
+
+/* Service cards */
+.service-card {
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+.service-card h3 {
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 8px;
+}
+.service-card p {
+  font-size: 0.9rem;
+  color: #475569;
+}
+.service-icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 12px;
+}
+
+/* Superiority */
+.superiority-section {
+  font-family: 'Poppins', sans-serif;
+  color: #1e293b;
+  margin: 60px auto;
+  max-width: 1200px;
+  padding: 0 20px;
+  text-align: center;
+}
+.superiority-section h2 {
+  padding: 100px 10px 60px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.superiority-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  margin-bottom: 50px;
+}
+.superiority-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px 40px;
+  text-align: left;
+}
+.superiority-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+.superiority-item img {
+  width: 35px;
+  height: 35px;
+}
+.superiority-item h3 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.superiority-item p {
+  font-size: 0.95rem;
+  color: #475569;
+  line-height: 1.4;
+}
+
+/* Target */
+.superiority-target {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+  text-align: left;
+}
+.superiority-target img {
+  width: 240px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.superiority-target h3 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+.superiority-target ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+.superiority-target li {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+/* Statistik */
+.superiority-data {
+  background: #0f172a;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+.superiority-data div {
+  text-align: center;
+}
+.superiority-data h3 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  font-weight: 400;
+  color: #cbd5e1;
+}
+.superiority-data p {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #facc15;
+}
